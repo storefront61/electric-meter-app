@@ -1,0 +1,112 @@
+body {
+	background-color: #e5e5cc;
+}
+
+h1{
+	text-align: center;
+	color: #888844;
+	font-weight: bold;
+}
+#nav {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	font-size: 1.2em;
+	color: #888844;
+}
+
+#container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    width: 90%;
+	margin: auto;
+	border 2px solid black;
+}
+#mainInput{
+     width: 400px;
+     height: 60px;
+     margin: auto;
+     border: none;
+     font-size: 1.75em;
+     opacity: 0.3;
+     background-color: #e5e5cc;
+     border-bottom: 1px solid blue;
+}
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#changeInput {
+	width: 60%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+    margin: auto;
+	margin-top: 10px;
+    visibility: hidden;
+}
+#changeInput input{
+    margin-right: 10px;
+    color: #888844;
+}
+label{
+	color: #888844;
+}
+
+.task {
+	/*width: 100%;*/
+	height: 30px;
+	line-height: 25px;
+	font-size: 14px;
+	/*padding: 0 20px;*/
+	color: #34495e;
+	transition: all .3s ease;
+}
+.list {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin: auto;
+	margin-top: 20px;
+	list-style: none;
+}
+.task:hover span{
+	opacity: 1;
+}
+.task:hover{
+	background-color: #ffcccc;
+}
+li span {
+	margin-left: 30px;
+	float: right;
+	color: #c0392b;
+	transition: all 0.3s;
+	opacity: 0;
+}
+li span:hover {
+	color: #e74c3c;
+	cursor: pointer;
+}
+@media only screen and (max-width: 640px){
+	.list{
+	display: flex;
+	flex-wrap: wrap;
+   }
+   .task{
+    height: 20px;
+	line-height: 15px;
+	font-size: 10px;
+	/*padding: 0 20px;*/
+	color: #34495e;
+	transition: all .3s ease;
+   }
+}
